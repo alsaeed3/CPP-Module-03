@@ -6,11 +6,11 @@
 #    By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 17:20:07 by alsaeed           #+#    #+#              #
-#    Updated: 2024/04/23 17:51:19 by alsaeed          ###   ########.fr        #
+#    Updated: 2024/04/24 00:28:12 by alsaeed          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CXX 		= g++
+CXX 		= c++
 CXXFLAGS 	= -Wall -Werror -Wextra -std=c++98
 
 SRCS 		= ClapTrap.cpp

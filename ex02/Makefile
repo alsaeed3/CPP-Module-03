@@ -6,19 +6,19 @@
 #    By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 17:20:07 by alsaeed           #+#    #+#              #
-#    Updated: 2024/04/24 00:28:08 by alsaeed          ###   ########.fr        #
+#    Updated: 2024/04/24 00:28:03 by alsaeed          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX 		= c++
 CXXFLAGS 	= -Wall -Werror -Wextra -std=c++98
 
-SRCS 		= ClapTrap.cpp ScavTrap.cpp
+SRCS 		= ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
 OBJS_DIR 	= objs
 OBJS 		= $(SRCS:%.cpp=$(OBJS_DIR)/%.o)
 
-NAME 		= scavtrap
+NAME 		= fragtrap
 
 # colors #
 GREEN 		= \033[32m
@@ -35,18 +35,18 @@ $(OBJS_DIR)/%.o: %.cpp
 
 $(NAME): $(OBJS) main.cpp
 	@$(CXX) $(CXXFLAGS) $(OBJS) main.cpp -o $(NAME)
-	@echo "ScavTrap compiled: $(BOLD_GREEN)OK$(RESET)"
+	@echo "FragTrap compiled: $(BOLD_GREEN)OK$(RESET)"
 
 clean:
 	@if [ -e $(OBJS_DIR) ]; then \
 		rm -rf $(OBJS_DIR); \
-		echo "ScavTrap clean: $(BOLD_RED)OK$(RESET)"; \
+		echo "FragTrap clean: $(BOLD_RED)OK$(RESET)"; \
 	fi
 
 fclean: clean
 	@if [ -e $(NAME) ]; then \
 		rm -rf $(NAME); \
-		echo "ScavTrap full-clean: $(BOLD_RED)OK$(RESET)"; \
+		echo "FragTrap full-clean: $(BOLD_RED)OK$(RESET)"; \
 	fi
 
 re: fclean all
