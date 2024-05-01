@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:20:52 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/05/01 15:00:27 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/05/01 15:10:33 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,7 @@ ClapTrap::ClapTrap( void )
 	return;
 }
 
-ClapTrap::ClapTrap( std::string name ) 
-	: _name( name ), _hp( 10 ), _ep( 10 ), _ad( 0 ) {
+ClapTrap::ClapTrap( std::string name ) : _name( name ), _hp( 10 ), _ep( 10 ), _ad( 0 ) {
 
 	std::cout << this->getName() << " ClapTrap Constructor has been called" << std::endl;
 

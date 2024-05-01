@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:20:41 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/05/01 15:00:32 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/05/01 14:22:43 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,9 @@ class	ClapTrap {
 		unsigned int				_hp;
 		unsigned int				_ep;
 		unsigned int				_ad;
+		static const unsigned int	_defHp = 10;
+		static const unsigned int	_defEp = 10;
+		static const unsigned int	_defAd = 0;
 
 	public:
 

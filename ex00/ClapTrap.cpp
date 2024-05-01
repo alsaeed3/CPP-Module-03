@@ -6,7 +6,7 @@
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 17:20:52 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/04/23 20:17:08 by alsaeed          ###   ########.fr       */
+/*   Updated: 2024/05/01 14:59:44 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 /*								Orthodox Canonical Form										 */
 /*********************************************************************************************/
 ClapTrap::ClapTrap( void ) 
-	: _name( "DEFAULT" ), _hp( _defHp ), _ep( _defEp ), _ad( _defAd ) {
+	: _name( "DEFAULT" ), _hp( 10 ), _ep( 10 ), _ad( 0 ) {
 
 	std::cout << "DEFAULT ClapTrap Constructor has been called" << std::endl;
 

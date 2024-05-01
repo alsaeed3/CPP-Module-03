@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alsaeed <alsaeed@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/22 17:20:57 by alsaeed           #+#    #+#             */
-/*   Updated: 2024/05/01 15:18:00 by alsaeed          ###   ########.fr       */
+/*   Created: 2024/04/23 19:17:36 by alsaeed           #+#    #+#             */
+/*   Updated: 2024/05/01 14:22:48 by alsaeed          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
 
-int main(void)
-{
-    ClapTrap *scav = new ScavTrap("scav1");
+# include "ClapTrap.hpp"
 
-    scav->beRepaired(10);
-    delete scav;
+class ScavTrap : virtual public ClapTrap {
 
-    ScavTrap scav2( "guard" );
-    
-    scav2.guardGate();
+	public:
 
-    return 0;
-}
+		ScavTrap( void );
+		ScavTrap( std::string name );
+		ScavTrap( const ScavTrap& source );
+		ScavTrap&	operator=( const ScavTrap& source );
+		~ScavTrap( void );
+		
+		void	attack( const std::string& target );
+		void	guardGate( void );
+};
+
+#endif
